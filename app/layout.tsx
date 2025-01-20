@@ -7,7 +7,7 @@ import { ThemeProvider } from "next-themes";
 
 
 
-const font = Bebas_Neue({weight:"400"})
+const font = Bebas_Neue({weight:"400",subsets:["latin","latin-ext"],preload:true})
   
 
 export const metadata: Metadata = {
