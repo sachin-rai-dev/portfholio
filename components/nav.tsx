@@ -43,7 +43,7 @@ function Nav() {
             setNav(!nav);
           }}
         >
-          {nav ? <AlignJustify /> : <X />}
+          {nav ? <AlignJustify color="white"/> : <X color="white"/>}
         </span>
       </span>
     </nav>

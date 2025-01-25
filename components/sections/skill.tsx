@@ -14,8 +14,8 @@ function Skill() {
 
 function Card({ data }: { data: skill }) {
   return (
-    <div className="shadow rounded-lg p-5">
-      <h1 className="text-xl font-bold">{data.Teck}</h1>
+    <div className="shadow rounded-lg p-5 border border-input">
+      <h1 className="text-xl md:text-2xl font-bold">{data.Teck}</h1>
       {data.skills.map((val, i) => {
         return(
           

@@ -1,6 +1,5 @@
 "use client"
 import { SendHorizontal, } from "lucide-react";
-import { useRouter } from "next/router";
 import React, { ReactElement } from "react";
 
 interface icons {
@@ -62,17 +61,12 @@ function Footer() {
     ),
   };
   return (
-    <div >
+    <div className="relative z-50 bg-white">
       <div className="flex justify-around py-10 w-full border-t border-slate-100">
-        <div className="text-4xl font-semibold flex items-center">
+        <div className="text-4xl font-semibold items-center hidden md:flex">
           <h1>sr</h1>
         </div>
         
-        <div className="flex flex-col gap-3">
-              <h1 className="font-medium text-xl">Contact on</h1>
-              <span>+918447827092</span>
-              <span>+919625679103</span>
-        </div>
 
         <div className="flex flex-col gap-3">
           <h1 className="font-medium text-xl">Let&apos;s chat!</h1>
