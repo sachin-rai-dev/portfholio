@@ -29,7 +29,7 @@ function Hero() {
           <span className="font-light text-gray-400 text-xs md:text-sm  px-20 mt-5">A creative full stack web developer, I blend front-end elegance with back-end power to craft engaging and dynamic web experiences. My aim is to turn innovative ideas into captivating digital solutions.</span>
 
           <div className="flex justify-center mt-5 space-x-5">
-            <Button variant={"outline"} className="px-12 py-6 text-lg hover:bg-black hover:text-white" onClick={()=>{router.push("https://github.com/sachin-rai-dev")}}><Github size={30}/></Button>
+            <Button variant={"outline"} className={`px-12 py-6 text-lg hover:bg-black hover:text-white ${theme === "light" ? "bg-black text-white" : "bg-white text-black"}`} onClick={()=>{router.push("https://github.com/sachin-rai-dev")}}><Github size={30}/></Button>
             <Button variant={"outline"} className="px-12 py-6 hover:bg-sky-600 " onClick={()=>{router.push("https://www.linkedin.com/in/sachin-rai-26534a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app")}}><Linkedin /></Button>
           </div>
       </div>
