@@ -1,5 +1,6 @@
-"use client"
-import { SendHorizontal, } from "lucide-react";
+"use client";
+import { SendHorizontal } from "lucide-react";
+import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
 
 interface icons {
@@ -10,6 +11,7 @@ interface icons {
 }
 
 function Footer() {
+  const {theme}=useTheme()
   const icons: icons = {
     fiverr: (
       <svg
@@ -61,33 +63,49 @@ function Footer() {
     ),
   };
   return (
-    <div className="relative z-50 bg-white">
+    <div className="relative z-50 ">
       <div className="flex justify-around py-10 w-full border-t border-slate-100">
         <div className="text-4xl font-semibold items-center hidden md:flex">
           <h1>sr</h1>
         </div>
-        
 
         <div className="flex flex-col gap-3">
           <h1 className="font-medium text-xl">Let&apos;s chat!</h1>
-          <a href="mailto:sachinrai6782000@gmail.com" className="font-sans flex gap-4 items-center font-medium">sachinrai6782000@gmail.com <SendHorizontal size={20}/></a>
+          <a
+            href="mailto:sachinrai6782000@gmail.com"
+            className="font-sans flex gap-4 items-center font-medium"
+          >
+            sachinrai6782000@gmail.com <SendHorizontal size={20} />
+          </a>
           <div className="flex gap-7">
-            <a className="rounded-full p-2 border border-input hover:bg-green-500 bg-slate-200">
-                {icons.fiverr}
-                </a>
-            <a href="" className="rounded-full p-2 border border-input hover:bg-green-700 bg-slate-200">
+            <a href="https://www.fiverr.com/s/dD8jKjz" className="rounded-full p-2 border border-input hover:bg-green-500 bg-slate-200">
+              {icons.fiverr}
+            </a>
+            <a
+              href="https://www.upwork.com/freelancers/~01570b1d640774cbb1?s=1110580755107926016"
+              className="rounded-full p-2 border border-input hover:bg-green-700 bg-slate-200"
+            >
               {icons.upwork}
             </a>
-            <a href="" className="rounded-full p-2  border border-input hover:bg-gray-500 bg-slate-200">
+            <a
+              href="https://github.com/sachin-rai-dev"
+              className="rounded-full p-2  border border-input hover:bg-gray-500 bg-slate-200"
+            >
               {icons.github}
             </a>
-            <a href="" className="rounded-full p-2 border border-input hover:bg-blue-500 bg-slate-200">
+            <a
+              href="https://www.linkedin.com/in/sachin-rai-26534a2ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              className="rounded-full p-2 border border-input hover:bg-blue-500 bg-slate-200"
+            >
               {icons.linkden}
             </a>
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-100  text-center p-3"> Design by - sachin rai</div>
+      <div className="border-t border-slate-100  text-center p-3">
+        {" "}
+        Design by - sachin rai
+      </div>
     </div>
   );
 }

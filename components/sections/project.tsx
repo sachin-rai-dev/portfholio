@@ -18,10 +18,10 @@ function Project() {
 
 function Card({data}:{data:project}) {
   return(
-    <div className='rounded-lg border border-input p-5 flex flex-col items-center gap-4'>
+    <div className='rounded-lg border border-input p-5 flex flex-col items-center gap-4 '>
       <Image src={data.url} alt={"project pic"} height={580} width={580} className='rounded-lg'/>
       <h1 className='font-semibold text-lg text-start'>{data.title}</h1>
-      <h3>{data.description}</h3>
+      <h3 className='text-slate-400'>{data.description}</h3>
     </div>
   )
 }
