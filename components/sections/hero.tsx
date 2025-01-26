@@ -26,7 +26,7 @@ function Hero() {
           <span className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-wider text-nowrap">Hello, I&apos;m sachin<span className="text-yellow-400">👋</span></span>
           <span className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-wider bg-gradient-to-r from-violet-400 to-purple-300 bg-clip-text text-transparent text-nowrap"> Full Stack Developer</span>
           <span className="text-4xl sm:text-5xl md:text-7xl font-semibold tracking-wider ">with <span className="bg-gradient-to-r from-yellow-200 to-pink-400 rounded-lg text-white px-2 text-nowrap"><FlipWords words={["React.js","Next.js","Node.js","React Native"]} /> <br /></span></span>
-          <span className="font-light text-gray-400 text-xs md:text-sm  px-20 mt-5">A creative full stack web developer, I blend front-end elegance with back-end power to craft engaging and dynamic web experiences. My aim is to turn innovative ideas into captivating digital solutions.</span>
+          <span className="font-light text-gray-500 text-xs md:text-sm  px-20 mt-5">A creative full stack web developer, I blend front-end elegance with back-end power to craft engaging and dynamic web experiences. My aim is to turn innovative ideas into captivating digital solutions.</span>
 
           <div className="flex justify-center mt-5 space-x-5">
             <Button variant={"outline"} className={`px-12 py-6 text-lg hover:bg-black hover:text-white ${theme === "light" ? "bg-black text-white" : "bg-white text-black"}`} onClick={()=>{router.push("https://github.com/sachin-rai-dev")}}><Github size={30}/></Button>
