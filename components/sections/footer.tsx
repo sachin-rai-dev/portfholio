@@ -1,5 +1,6 @@
 "use client";
 import { SendHorizontal } from "lucide-react";
+import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
 
 interface icons {
@@ -10,6 +11,7 @@ interface icons {
 }
 
 function Footer() {
+  const {theme}=useTheme()
   const icons: icons = {
     fiverr: (
       <svg
@@ -61,7 +63,7 @@ function Footer() {
     ),
   };
   return (
-    <div className="relative z-50 bg-zinc-950">
+    <div className={`relative z-50 ${theme === "light" ? "bg-white":"bg-black"}`}>
       <div className="flex justify-around py-10 w-full border-t border-slate-100">
         <div className="text-4xl font-semibold items-center hidden md:flex">
           <h1>sr</h1>
@@ -100,8 +102,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-100  text-center p-3">
-        {" "}
+      <div className={`border-t border-slate-100  text-center p-3 ${theme === "light" ? "text-black":"text-slate-100"}`}> 
         Design by - sachin rai
       </div>
     </div>
