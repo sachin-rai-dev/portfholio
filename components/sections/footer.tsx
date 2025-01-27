@@ -1,6 +1,5 @@
 "use client";
 import { SendHorizontal } from "lucide-react";
-import { useTheme } from "next-themes";
 import React, { ReactElement } from "react";
 
 interface icons {
@@ -11,7 +10,6 @@ interface icons {
 }
 
 function Footer() {
-  const {theme}=useTheme()
   const icons: icons = {
     fiverr: (
       <svg
