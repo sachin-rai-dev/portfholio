@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function Project() {
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4 p-5'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 gap-4 '>
         {
           projects.map((val,i)=>{
             return(

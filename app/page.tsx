@@ -5,7 +5,6 @@ import Hero from "@/components/sections/hero"
 import Project from "@/components/sections/project"
 import Skill from "@/components/sections/skill"
 import { Timeline } from "@/components/ui/timeline"
-import { title } from "process"
 
 function Home() {
 
