@@ -11,7 +11,7 @@ export interface skill {
 export interface project {
   url: string;
   title: string;
-  description: string
+  description: string;
 }
 
 export const SkillSectionData: skill[] = [
@@ -89,7 +89,11 @@ export const SkillSectionData: skill[] = [
         icon:
           "https://img.icons8.com/?size=100&id=SDVmtZ6VBGXt&format=png&color=000000",
       },
-      { name: "socket.io", icon: "" },
+      {
+        name: "socket.io",
+        icon:
+          "https://img.icons8.com/?size=100&id=gKfcEStXI1Hm&format=png&color=000000",
+      },
       {
         name: "mongoose",
         icon:
@@ -158,20 +162,23 @@ export const SkillSectionData: skill[] = [
   },
 ];
 
-export const projects:project[] = [
+export const projects: project[] = [
   {
     url: "/medica.png",
     title: "Medica",
-    description: "I'm the developer of a hospital Appointment Management Web and Android App, streamlining scheduling, enabling online consultations, saving time, and offering advanced analytics for efficient healthcare management and improved patient satisfaction.",
+    description:
+      "I'm the developer of a hospital Appointment Management Web and Android App, streamlining scheduling, enabling online consultations, saving time, and offering advanced analytics for efficient healthcare management and improved patient satisfaction.",
   },
   {
     url: "/webgenn.png",
     title: "Webgenn",
-    description: "As a developer, a project-based web development agency site, I designed it to showcase innovative web solutions and cutting-edge technology. This site is a testament to my skills and creativity, tailored for my portfolio.",
+    description:
+      "As a developer, a project-based web development agency site, I designed it to showcase innovative web solutions and cutting-edge technology. This site is a testament to my skills and creativity, tailored for my portfolio.",
   },
   {
     url: "/webgenn.png",
     title: "Medica app",
-    description: "I'm the developer of Medica, an Android app designed for seamless appointment booking. This app simplifies scheduling, allowing users to easily manage healthcare appointments. Medica enhances user experience by providing a user-friendly interface and efficient functionality.",
+    description:
+      "I'm the developer of Medica, an Android app designed for seamless appointment booking. This app simplifies scheduling, allowing users to easily manage healthcare appointments. Medica enhances user experience by providing a user-friendly interface and efficient functionality.",
   },
 ];

@@ -12,9 +12,10 @@ import { useRouter } from "next/navigation"
 
 function Hero() {
 
+  
   const {theme} = useTheme() 
   const router = useRouter()
-  
+ 
   return (
     
     <div className=" h-full sm:h-screen w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.4] bg-grid-small-black/[0.4] relative flex items-center justify-center flex-col md:flex-row">
