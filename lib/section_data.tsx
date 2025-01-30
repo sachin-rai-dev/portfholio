@@ -9,6 +9,7 @@ export interface skill {
 }
 
 export interface project {
+  link:string
   url: string;
   title: string;
   description: string;
@@ -164,18 +165,21 @@ export const SkillSectionData: skill[] = [
 
 export const projects: project[] = [
   {
+    link:"https://medica-bice.vercel.app/",
     url: "/medica.png",
     title: "Medica",
     description:
       "I'm the developer of a hospital Appointment Management Web and Android App, streamlining scheduling, enabling online consultations, saving time, and offering advanced analytics for efficient healthcare management and improved patient satisfaction.",
   },
   {
+    link:"https://website-woad-chi.vercel.app/",
     url: "/webgenn.png",
     title: "Webgenn",
     description:
       "As a developer, a project-based web development agency site, I designed it to showcase innovative web solutions and cutting-edge technology. This site is a testament to my skills and creativity, tailored for my portfolio.",
   },
   {
+    link:"https://medica-bice.vercel.app/",
     url: "/webgenn.png",
     title: "Medica app",
     description:

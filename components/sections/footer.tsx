@@ -63,7 +63,7 @@ function Footer() {
     ),
   };
   return (
-    <div className={`relative z-50 ${theme === "light" ? "bg-white":"bg-black"}`}>
+    <div className={`relative z-50 ${theme === "light" ? "bg-white":"bg-black"} bottom-0`}>
       <div className="flex justify-around py-10 w-full border-t border-slate-100">
         <div className="text-4xl font-semibold items-center hidden md:flex">
           <h1>sr</h1>
